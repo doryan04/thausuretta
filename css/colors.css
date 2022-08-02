@@ -1,7 +1,13 @@
+@import url(css/main.css);
+@import url(css/normalize.css);
+@import url(fonts/roboto.css);
+
 :root {
     font-family: Roboto;
-    --honey-beige-text: #6D6659;
     --honey-beige: #f2e3c6;
+    --honey-beige-dark: #C2B69E;
+    --honey-beige-darker: #3D3932;
+    --honey-beige-darkest: #181714;
     --beige: #ffc6a5;
     --crimson: #e6324b;
     --dark-gray: #353634;
