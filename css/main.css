@@ -15,54 +15,129 @@
 /* Общие свойства навигационного меню и его элементов */
 
 ul{
-    margin:0;
-    padding:0;
-    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 75px;
+    margin:0;
+    padding:0;
     transition: 0.5s ease-in-out;
 }
 
 li{
     font-size: 20pt;
     font-weight: 500;
-    margin: 0px 50px;
+    margin: 0;
     list-style-type: none;
     text-decoration: none;
+}
+.navigation-logo{
+    height: 100px;
+    width: 100px;
+    transform: scale(0.4);
+    margin: 0px 20px;
+    transition: 0.5s ease-in-out; 
 }
 
 /* Статическое */
 
 .navigation-static{
+    align-items: center;
+    justify-content: space-between;
     height: 75px;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 0; 
 }
-.text-static{
+.paragraphs-static{
+    align-items: center;
+    background-color: var(--crimson-dark);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 7.5px 0px;
+    min-width: min-content;
+}
+.button-static{ 
     color: var(--honey-beige);
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+#buttonInParagraphStatic{
+    border-radius: 40px;
+    background-color: none;
+    margin: 0px 7.5px;
+    padding: 5px 10px;
+}
+#telegramStatic{
+    background-image: url(/svg/Telegram-stat.svg);
+}
+#siteStatic{
+    background-image: url(/svg/Site-logo-stat.svg);
+}
+
+
+#siteStatic:hover,
+#telegramStatic:hover{
+    transform: scale(0.45);   
+}
+#buttonInParagraphStatic:hover{
+    background-color: var(--crimson-darker);
 }
 
 /* Динамическое */
 
 .navigation-dynamic{
+    align-items: center;
     background-color: var(--honey-beige);
+    justify-content: space-between;
     position: fixed;
     transition: 0.5s ease-in-out;
     top: -75px;
     width: 100%;
     z-index: 1;    
 }
-.text-dynamic{
-    color: var(--honey-beige-darker);
-}
 .active{
     transition: 0.5s ease-in-out;
     top: 0px;
 }
+.button-dynamic{
+    color: var(--honey-beige-darkest);
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+.paragraphs-dynamic{
+    align-items: center;
+    background-color: var(--honey-beige-dark);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 7.5px 0px;
+    min-width: min-content;
+}
+#buttonInParagraphDynamic{
+    border-radius: 40px;
+    background-color: none;
+    margin: 0px 7.5px;
+    padding: 5px 10px;
+}
+#telegramDynamic{
+    background-image: url(/svg/Telegram-dyn.svg);
+}
+#siteDynamic{
+    background-image: url(/svg/Site-logo-dyn.svg);
+}
+
+
+#siteDynamic:hover,
+#telegramDynamic:hover{
+    transform: scale(0.45);   
+}
+#buttonInParagraphDynamic:hover{
+    background-color: var(--honey-beige-darker);
+}
+
+
 
 /* ============= */
 /* Главный экран */
@@ -83,7 +158,8 @@ li{
     background-image: url(/svg/AWF.svg);
     width: 590px;
     height: 952px;
-    transform: scale(calc(100% / 2.5));
+    transform: scale(calc(100% / 2.5)) translateY(0);
+    opacity: 1;
 }
 
 /* Стрелочка */
@@ -99,7 +175,7 @@ li{
     height: calc((var(--sin30) * 25px) + (var(--cos30) * 2.5px) + (var(--sin60) * var(--sin30) * 5px));
 }
 .arrow-bar{
-    background-color: var(--beige);
+    background-color: var(--honey-beige);
     position: absolute;
     transition: 0.25s ease-in-out;
     height: 5px;
@@ -107,25 +183,25 @@ li{
 #left {
     border-radius: 2.5px 0px 0px 2.5px;
     left: 0;
-    rotate: 30deg;
+    transform: rotate(30deg);
     width: 25px;
 }
 #right {
     border-radius: 0px 2.5px 2.5px 0px;
     right: 0;
-    rotate: -30deg;
+    transform: rotate(-30deg);
     width: 25px;
 }
 #left_active {
     border-radius: 2.5px 0px 0px 2.5px;
     left: 0;
-    rotate: 0deg;
+    transform: rotate(0deg);
     width: 22.5px;
 }
 #right_active {
     border-radius: 0px 2.5px 2.5px 0px;
     right: 0;
-    rotate: 0deg;
+    transform: rotate(0deg);
     width: 22.5px;
 }
 
@@ -148,7 +224,7 @@ li{
 .container{
     background-color: var(--honey-beige-dark);
     border-radius: 10px;
-    color: var(--honey-beige-darker);
+    color: var(--honey-beige-darkest);
     min-height: 300px;
     min-width: 300px;
     padding: 30px;
@@ -167,7 +243,7 @@ li{
 
 footer {
     align-items: center;
-    background-color: var(--honey-beige-darker);
+    background-color: var(--honey-beige-darke);
     color: var(--honey-beige-dark);
     display: flex;
     justify-content: center;
