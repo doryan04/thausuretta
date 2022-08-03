@@ -31,6 +31,7 @@ li{
     text-decoration: none;
 }
 .navigation-logo{
+    cursor: pointer;
     height: 100px;
     width: 100px;
     transform: scale(0.4);
@@ -55,7 +56,7 @@ li{
     border-radius: 40px;
     display: flex;
     justify-content: space-around;
-    padding: 7.5px 0px;
+    padding: 0px 0px;
     min-width: min-content;
 }
 .button-static{ 
@@ -66,8 +67,8 @@ li{
 #buttonInParagraphStatic{
     border-radius: 40px;
     background-color: none;
-    margin: 0px 7.5px;
-    padding: 5px 10px;
+    margin: 0px 0px;
+    padding: 10px 15px;
 }
 #telegramStatic{
     background-image: url(/svg/Telegram-stat.svg);
@@ -112,14 +113,14 @@ li{
     border-radius: 40px;
     display: flex;
     justify-content: space-around;
-    padding: 7.5px 0px;
+    padding: 0px 0px;
     min-width: min-content;
 }
 #buttonInParagraphDynamic{
     border-radius: 40px;
     background-color: none;
-    margin: 0px 7.5px;
-    padding: 5px 10px;
+    margin: 0px 0px;
+    padding: 10px 15px;
 }
 #telegramDynamic{
     background-image: url(/svg/Telegram-dyn.svg);
@@ -156,9 +157,11 @@ li{
 }
 .logo{
     background-image: url(/svg/AWF.svg);
+    bottom: 0%;
     width: 590px;
     height: 952px;
-    transform: scale(calc(100% / 2.5)) translateY(0);
+    transform: scale(calc(100% / 2.5));
+    position: absolute;
     opacity: 1;
 }
 
@@ -213,7 +216,7 @@ li{
     background-color: var(--honey-beige);
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    gap: 3%;
+    gap: 2%;
     padding: 2%;
     position: relative;
     margin: 0;
@@ -243,7 +246,7 @@ li{
 
 footer {
     align-items: center;
-    background-color: var(--honey-beige-darke);
+    background-color: var(--honey-beige-darkest);
     color: var(--honey-beige-dark);
     display: flex;
     justify-content: center;
