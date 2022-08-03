@@ -6,14 +6,15 @@
 const arrowLeft = document.getElementById("left");
 const arrowRight = document.getElementById("right");
 
-
 addEventListener('scroll', function(){
+
     // Динамическое навигационное меню //
+
     let navigationBar = document.getElementsByClassName("navigation-dynamic")[0];
 
     if (window.pageYOffset >= navigationBar.clientHeight){
         navigationBar.classList.add("active");
-    } else {
+    } else if (window.pageYOffset == 0) {
         navigationBar.classList.remove("active");
     }
 
