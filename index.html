@@ -5,35 +5,114 @@
         <link rel="stylesheet" type="text/css" href="css/colors.css"></style>
         <link rel="stylesheet" type="text/css" href="css/normalize.css"></style>
         <link rel="stylesheet" type="text/css" href="fonts/roboto.css"></style>
+        <script type="text/javascript" src="scripts/logoScroll.js"></script>
     </head>
     <body>
+
+        <!--===============-->
+        <!--Стартовый экран-->
+        <!--===============-->
+
         <div class="screen">
+
+            <!--Логотип-->
+
             <div class="logo">
             </div>
+
+            <!--Стрелочка-->
+
             <div class="arrow">
                 <div class="arrow-bar" id="left"></div>
                 <div class="arrow-bar" id="right"></div>
             </div>
         </div>
+
+        <!--==================-->
+        <!--Навигационное меню-->
+        <!--==================-->
+
+        <!--Динамическое навигационное меню-->
+
         <ul class="navigation-dynamic">
-            <li class="text-dynamic">Main</li>
-            <li class="text-dynamic">Project</li>
+
+            <!--Логотип сайта-->
+
+            <li class="navigation-logo" id="siteDynamic">
+                <a href="#"></a>
+            </li>
+
+            <!--Разделы сайта-->
+
+            <div class="paragraphs-dynamic">
+                <li class="button-dynamic" id="buttonInParagraphDynamic"><a href="#">About us</a></li>
+                <li class="button-dynamic" id="buttonInParagraphDynamic"><a href="#">Projects</a></li>
+            </div>
+
+            <!--Телеграм канал-->
+
+            <li class="navigation-logo" id="telegramDynamic">
+                <a href="#"></a>
+            </li>
         </ul>
+
+        <!--Статическое навигационное меню-->
+
         <ul class="navigation-static">
-            <li class="text-static">Main</li>
-            <li class="text-static">Project</li>
+
+            <!--Логотип сайта-->
+
+            <li class="navigation-logo" id="siteStatic">
+                <a href="#"></a>
+            </li>
+
+            <!--Разделы сайта-->
+
+            <div class="paragraphs-static">
+                <li class="button-static" id="buttonInParagraphStatic"><a href="#">About us</a></li>
+                <li class="button-static" id="buttonInParagraphStatic"><a href="#">Projects</a></li>
+            </div>
+
+            <!--Телеграм канал-->
+
+            <li class="navigation-logo" id="telegramStatic">
+                <a href="#"></a>
+            </li>
         </ul>
+
+        <!--=======-->
+        <!--Контент-->
+        <!--=======-->
+
         <div class="wrapper">
+
+            <!--Галерея-->
+
             <div class="container" id="gallery">
                 <h1> Gallery </h1>
             </div>
+
+            <!--Описание-->
+
             <div class="container" id="description">
                 <h1> About us </h1>
             </div>
+
         </div>
+
+        <!--======-->
+        <!--Подвал-->
+        <!--======-->
+
         <footer>
             <h1>work in progress</h1>
         </footer>
+
+        <!--======-->
+        <!--Скрипт-->
+        <!--======-->
+
         <script type="text/javascript" src="scripts/animation.js"></script>
+
     </body>
 </html>
