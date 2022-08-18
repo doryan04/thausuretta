@@ -3,8 +3,8 @@
 // Код анимации для плюшек!!! //
 // ========================== //
 
-const arrowLeft = document.getElementById("left");
-const arrowRight = document.getElementById("right");
+const arrowLeft = document.getElementById("left-bar");
+const arrowRight = document.getElementById("right-bar");
 
 addEventListener('scroll', function(){
 
@@ -21,11 +21,11 @@ addEventListener('scroll', function(){
     // Анимированные стрелочки //
 
     if (window.pageYOffset >= ((window.innerHeight * Math.cos(30 * (Math.PI/180))))/4){
-        arrowLeft.id = "left_active";
-        arrowRight.id = "right_active";
+        arrowLeft.id = "left-bar_active";
+        arrowRight.id = "right-bar_active";
     } else if (window.pageYOffset == 0) {
-        arrowLeft.id = "left";
-        arrowRight.id = "right";
+        arrowLeft.id = "left-bar";
+        arrowRight.id = "right-bar";
     }
 });
 
