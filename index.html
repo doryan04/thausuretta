@@ -1,11 +1,14 @@
 <!--DOCTYPE HTML-->
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/main.css"></style>
-        <link rel="stylesheet" type="text/css" href="css/colors.css"></style>
-        <link rel="stylesheet" type="text/css" href="css/normalize.css"></style>
-        <link rel="stylesheet" type="text/css" href="fonts/roboto.css"></style>
-        <script type="text/javascript" src="scripts/logoScroll.js"></script>
+        <link rel="stylesheet" href="../css/main.css"/>
+        <link rel="stylesheet" href="../css/colors.css"/>
+        <link rel="stylesheet" href="../css/normalize.css"/>
+        <link rel="stylesheet" href="../css/sliderStyles.css"/>
+        <link rel="stylesheet" href="../fonts/roboto.css"/>
+        <script type="text/javascript" src="scripts/logoScroll.js"> </script>
+        <script type="text/javascript" src="scripts/ds_slider.js"> </script>
+        <title>THAUSURETTA</title>
     </head>
     <body>
 
@@ -23,8 +26,8 @@
             <!--Стрелочка-->
 
             <div class="arrow">
-                <div class="arrow-bar" id="left"></div>
-                <div class="arrow-bar" id="right"></div>
+                <div class="arrow-bar" id="left-bar"></div>
+                <div class="arrow-bar" id="right-bar"></div>
             </div>
         </div>
 
@@ -69,8 +72,8 @@
             <!--Разделы сайта-->
 
             <div class="paragraphs-static">
-                <li class="button-static" id="buttonInParagraphStatic" style="margin-right:50px"><a href="#">About us</a></li>
-                <li class="button-static" id="buttonInParagraphStatic" style="margin-left:50px"><a href="#">Projects</a></li>
+                <li class="button-static" id="buttonInParagraphStatic" style="margin-right:5px"><a href="#">About us</a></li>
+                <li class="button-static" id="buttonInParagraphStatic" style="margin-left:5px"><a href="#">Projects</a></li>
             </div>
 
             <!--Телеграм канал-->
@@ -85,19 +88,28 @@
         <!--=======-->
 
         <div class="wrapper">
+            <div class="container_row">
 
-            <!--Галерея-->
+                <!--Галерея-->
 
-            <div class="container" id="gallery">
-                <h1> Gallery </h1>
+                <div class="container" id="gallery">
+                    <h1> Gallery </h1>
+                    <div class="slider-background">
+                        <div class="slider">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Описание-->
+
+                <div class="container" id="description">
+                    <h1> Authors </h1>
+                </div>
             </div>
-
-            <!--Описание-->
-
-            <div class="container" id="description">
-                <h1> Authors </h1>
-            </div>
-
         </div>
 
         <!--======-->
@@ -113,6 +125,22 @@
         <!--======-->
 
         <script type="text/javascript" src="scripts/animation.js"></script>
+
+        <script>
+            DSS_start(".slider", 
+
+                settings = {
+
+                    transition: "ease-in-out",
+                    dots: true,
+                    dotsEffect: "dot-pull",
+                    arrows: true,
+                    endlessSlider: true,
+                    speedAnimation: 350,
+
+                }
+            );
+        </script>
 
     </body>
 </html>
