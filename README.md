@@ -8,4 +8,4 @@
 
 ### Here will be a gallery with pictures of my projects, as well as in the future I will try to make comments on each project.
 
-### Check out @tfk004 on Telegram. https://t.me/tfk004
+### Check out @tfk004 on Telegram. https://t.me/doryanProjects
