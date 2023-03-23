@@ -13,6 +13,10 @@
 
 /* Общие свойства навигационного меню и его элементов */
 
+*{
+    font-family: 'Roboto', serif;
+}
+
 ul{
     display: flex;
     flex-direction: row;
@@ -34,7 +38,7 @@ li{
     height: 100px;
     width: 100px;
     transform: scale(0.4);
-    margin: 0px 20px;
+    margin: 0 20px;
     transition: 0.5s ease-in-out; 
 }
 
@@ -55,7 +59,7 @@ li{
     border-radius: 40px;
     display: flex;
     justify-content: space-around;
-    padding: 0px 0px;
+    padding: 0;
     min-width: min-content;
 }
 .button-static{ 
@@ -65,8 +69,7 @@ li{
 }
 #buttonInParagraphStatic{
     border-radius: 40px;
-    background-color: none;
-    margin: 0px 0px;
+    margin: 0;
     padding: 10px 15px;
 }
 #telegramStatic{
@@ -99,7 +102,7 @@ li{
 }
 .active{
     transition: 0.5s ease-in-out;
-    top: 0px;
+    top: 0;
 }
 .button-dynamic{
     color: var(--honey-beige-darkest);
@@ -112,13 +115,12 @@ li{
     border-radius: 40px;
     display: flex;
     justify-content: space-around;
-    padding: 0px 0px;
+    padding: 0;
     min-width: min-content;
 }
 #buttonInParagraphDynamic{
     border-radius: 40px;
-    background-color: none;
-    margin: 0px 0px;
+    margin: 0;
     padding: 10px 15px;
 }
 #telegramDynamic{
@@ -155,7 +157,7 @@ li{
 }
 .logo{
     background-image: url(/svg/AWF.svg);
-    bottom: 0%;
+    bottom: 0;
     width: 590px;
     height: 952px;
     transform: scale(calc(100% / 2.5));
@@ -182,25 +184,25 @@ li{
     height: 5px;
 }
 #left-bar {
-    border-radius: 2.5px 0px 0px 2.5px;
+    border-radius: 2.5px 0 0 2.5px;
     left: 0;
     transform: rotate(30deg);
     width: 25px;
 }
 #right-bar {
-    border-radius: 0px 2.5px 2.5px 0px;
+    border-radius: 0 2.5px 2.5px 0;
     right: 0;
     transform: rotate(-30deg);
     width: 25px;
 }
 #left-bar_active {
-    border-radius: 2.5px 0px 0px 2.5px;
+    border-radius: 2.5px 0  2.5px;
     left: 0;
     transform: rotate(0deg);
     width: 22.5px;
 }
 #right-bar_active {
-    border-radius: 0px 2.5px 2.5px 0px;
+    border-radius: 0 2.5px 2.5px 0;
     right: 0;
     transform: rotate(0deg);
     width: 22.5px;
@@ -241,7 +243,7 @@ li{
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0 0 0;
     background: var(--honey-beige-darker);
     border-radius: 20px;
 }
